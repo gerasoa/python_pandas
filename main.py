@@ -42,10 +42,10 @@ df_address = pd.DataFrame(data)
 
 # export to Excel
 output_folder = 'C:/temp/export/'
-output_file = 'full_adress_uk.xlsx' 
+output_file = 'full_address_uk.xlsx' 
 output_file_path = output_folder + output_file
 
-df_address.to_csv(output_file_path, index=True)
+df_address.to_csv(output_file_path, index=False)
 
 if os.path.exists(output_file_path):
     print(f"File '{output_file_path}' was successfully created.")
